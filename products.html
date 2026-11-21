@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Packages — Bhosale Imperion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="siteHeaderSlot"></div>
+
+  <main>
+    <section class="page-hero section-padding">
+      <div class="container">
+        <span class="eyebrow" data-en="Structured Support" data-mr="व्यवस्थित सहाय्य">Structured Support</span>
+        <h1 class="page-title" data-en="Service &amp; Assistance Packages" data-mr="सेवा व सहाय्य पॅकेजेस">
+          Service &amp; <span class="text-gradient">Assistance Packages</span>
+        </h1>
+        <p class="page-subtitle" data-en="Browse ready-to-request packs for government portals, farmer schemes, education/job forms, ticket booking, and document formatting." data-mr="शासकीय पोर्टल, शेतकरी योजना, शिक्षण/नोकरी अर्ज, तिकीट बुकिंग व डॉक्युमेंटेशनसाठी पॅकेजेस पहा.">
+          Browse ready-to-request packs for government portals, farmer schemes, education/job forms, ticket booking, and document formatting.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="catalog-toolbar">
+          <div class="filter-bar" id="productFilterBar">
+            <button type="button" class="filter-btn active" data-category="all" data-en="All Packs" data-mr="सर्व पॅक">All Packs</button>
+            <button type="button" class="filter-btn" data-category="government" data-en="Government &amp; Forms" data-mr="शासकीय व फॉर्म्स">Government &amp; Forms</button>
+            <button type="button" class="filter-btn" data-category="agriculture" data-en="Agriculture" data-mr="कृषी">Agriculture</button>
+            <button type="button" class="filter-btn" data-category="education" data-en="Education &amp; Jobs" data-mr="शिक्षण व नोकरी">Education &amp; Jobs</button>
+            <button type="button" class="filter-btn" data-category="travel" data-en="Travel" data-mr="प्रवास">Travel</button>
+            <button type="button" class="filter-btn" data-category="docs" data-en="Documentation" data-mr="डॉक्युमेंटेशन">Documentation</button>
+          </div>
+
+          <div class="search-box">
+            <input
+              type="search"
+              id="productSearchInput"
+              class="form-input"
+              placeholder="Search packages, forms, docs..."
+              aria-label="Search packages"
+            />
+          </div>
+        </div>
+
+        <div class="card inspector-box" id="productInspectorBox">
+          <div class="card-top-row">
+            <span class="badge-tag" id="inspectorBadge">Government Services</span>
+            <span class="card-date" id="inspectorTurnaround">Accurate Filing</span>
+          </div>
+          <h2 id="inspectorTitle">Citizen Portal &amp; Certificate Pack</h2>
+          <p id="inspectorDesc">
+            Guided online applications, status check support, and receipt copy for government and citizen portals.
+          </p>
+          <ul class="bullet-list" id="inspectorChecklist"></ul>
+          <div class="card-footer-actions">
+            <a href="contact.html" class="btn btn-primary btn-sm" id="inspectorContactLink" data-en="Inquire For This Pack" data-mr="या पॅकसाठी चौकशी करा">
+              Inquire For This Pack
+            </a>
+          </div>
+        </div>
+
+        <div class="grid-3 catalog-grid" id="productsCatalogGrid"></div>
+
+        <div class="empty-state hidden" id="productsEmptyState">
+          <p data-en="No matching package found. Try clearing your filter or search text." data-mr="जुळणारे कोणतेही पॅकेज सापडले नाही. फिल्टर किंवा शोध शब्द बदला.">
+            No matching package found. Try clearing your filter or search text.
+          </p>
+          <button type="button" class="btn btn-outline btn-sm" id="resetProductFiltersBtn" data-en="Reset Filters" data-mr="फिल्टर रीसेट करा">
+            Reset Filters
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooterSlot"></div>
+
+  <script src="main.js"></script>
+  <script src="products.js"></script>
+</body>
+</html>

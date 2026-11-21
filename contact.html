@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Inquiry — Bhosale Imperion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="siteHeaderSlot"></div>
+
+  <main>
+    <section class="page-hero section-padding">
+      <div class="container">
+        <span class="eyebrow" data-en="Get In Touch" data-mr="संपर्क साधा">Get In Touch</span>
+        <h1 class="page-title" data-en="Start Your Service Inquiry" data-mr="तुमची सेवा चौकशी नोंदवा">
+          Start Your <span class="text-gradient">Service Inquiry</span>
+        </h1>
+        <p class="page-subtitle" data-en="Choose your required service, fill in your details, and submit or send directly on WhatsApp." data-mr="आवश्यक सेवा निवडा, तुमचा तपशील भरा आणि चौकशी सबमिट करा किंवा थेट व्हॉट्सअ‍ॅपवर पाठवा.">
+          Choose your required service, fill in your details, and submit or send directly on WhatsApp.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container grid-2">
+        <div class="card">
+          <span class="eyebrow" data-en="Quick Service Select" data-mr="जलद सेवा निवड">Quick Service Select</span>
+          <h2 data-en="Inquiry Details" data-mr="चौकशी तपशील">Inquiry Details</h2>
+
+          <div class="filter-bar" id="contactServicePills">
+            <button type="button" class="filter-btn" data-service="Government Online Services">Government</button>
+            <button type="button" class="filter-btn" data-service="Agriculture Online Services">Agriculture</button>
+            <button type="button" class="filter-btn" data-service="Education & Employment Services">Education &amp; Jobs</button>
+            <button type="button" class="filter-btn" data-service="Travel & Ticket Booking">Travel</button>
+            <button type="button" class="filter-btn" data-service="Online Forms & Applications">Online Forms</button>
+            <button type="button" class="filter-btn" data-service="Digital Documentation">Documentation</button>
+          </div>
+
+          <form id="inquiryForm" class="inquiry-form" novalidate>
+            <div class="form-group">
+              <label for="fullName" data-en="Full Name *" data-mr="पूर्ण नाव *">Full Name *</label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                class="form-input"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phoneNumber" data-en="Phone / WhatsApp Number *" data-mr="फोन / व्हॉट्सअ‍ॅप नंबर *">Phone / WhatsApp Number *</label>
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                class="form-input"
+                placeholder="+91 98XXX XXXXX"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="emailAddress" data-en="Email Address (Optional)" data-mr="ईमेल पत्ता (ऐच्छिक)">Email Address (Optional)</label>
+              <input
+                type="email"
+                id="emailAddress"
+                name="emailAddress"
+                class="form-input"
+                placeholder="you@example.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="serviceType" data-en="Service Required *" data-mr="आवश्यक सेवा *">Service Required *</label>
+              <select id="serviceType" name="serviceType" class="form-input" required>
+                <option value="">-- Select a Service --</option>
+                <option value="Government Online Services">Government Online Services</option>
+                <option value="Agriculture Online Services">Agriculture Online Services</option>
+                <option value="Education & Employment Services">Education &amp; Employment Services</option>
+                <option value="Travel & Ticket Booking">Travel &amp; Ticket Booking</option>
+                <option value="Online Forms & Applications">Online Forms &amp; Applications</option>
+                <option value="Digital Documentation">Digital Documentation</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="messageDetails" data-en="Requirement / Document Notes" data-mr="आवश्यक माहिती / कागदपत्र टीप">Requirement / Document Notes</label>
+              <textarea
+                id="messageDetails"
+                name="messageDetails"
+                rows="4"
+                class="form-input"
+                placeholder="Share form name, travel date, or PDF/photo size requirement..."
+              ></textarea>
+            </div>
+
+            <div id="formFeedback" class="form-feedback" aria-live="polite"></div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary" data-en="Save Inquiry" data-mr="चौकशी जतन करा">
+                Save Inquiry
+              </button>
+              <button type="button" id="sendViaWhatsAppBtn" class="btn btn-outline" data-en="Send on WhatsApp" data-mr="व्हॉट्सअ‍ॅपवर पाठवा">
+                Send on WhatsApp
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="card">
+          <span class="eyebrow" data-en="Direct Channels" data-mr="थेट संपर्क माध्यम">Direct Channels</span>
+          <h2 data-en="Bhosale Imperion Desk" data-mr="भोसले इम्पेरिअन संपर्क">Bhosale Imperion Desk</h2>
+          <p data-en="Reach out directly for quick form checks, ticket booking support, or document formatting guidance." data-mr="फॉर्म तपासणी, तिकीट बुकिंग किंवा डॉक्युमेंटेशन मार्गदर्शनासाठी थेट संपर्क साधा.">
+            Reach out directly for quick form checks, ticket booking support, or document formatting guidance.
+          </p>
+
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <strong data-en="Phone / Call" data-mr="फोन / कॉल">Phone / Call</strong>
+              <span id="contactPhoneDisplay">+91 88570 52812</span>
+            </div>
+
+            <div class="contact-info-item">
+              <strong data-en="Email" data-mr="ईमेल">Email</strong>
+              <a href="mailto:contact@bhosaleimperion.com">contact@bhosaleimperion.com</a>
+            </div>
+
+            <div class="contact-info-item">
+              <strong data-en="Website" data-mr="संकेतस्थळ">Website</strong>
+              <span>www.bhosaleimperion.com</span>
+            </div>
+          </div>
+
+          <div class="card-footer-actions">
+            <a
+              href="https://wa.me/918857052812"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="directWhatsAppLink"
+              class="btn btn-primary"
+              data-en="Chat on WhatsApp"
+              data-mr="व्हॉट्सअ‍ॅपवर चॅट करा"
+            >
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooterSlot"></div>
+
+  <script src="main.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>

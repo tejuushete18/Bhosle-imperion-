@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Bhosale Imperion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="siteHeaderSlot"></div>
+
+  <main>
+    <section class="page-hero section-padding">
+      <div class="container">
+        <span class="eyebrow" data-en="Visual Glimpse" data-mr="दृश्य झलक">Visual Glimpse</span>
+        <h1 class="page-title" data-en="Workspace &amp; Service Gallery" data-mr="कार्यक्षेत्र व सेवा गॅलरी">
+          Workspace &amp; <span class="text-gradient">Service Gallery</span>
+        </h1>
+        <p class="page-subtitle" data-en="Explore how Bhosale Imperion supports portal submissions, document preparation, and ticket assistance." data-mr="भोसले इम्पेरिअनद्वारे पोर्टल अर्ज, डॉक्युमेंटेशन आणि तिकीट सहाय्याची झलक पहा.">
+          Explore how Bhosale Imperion supports portal submissions, document preparation, and ticket assistance.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="filter-bar" id="galleryFilterBar">
+          <button type="button" class="filter-btn active" data-category="all" data-en="All" data-mr="सर्व">All</button>
+          <button type="button" class="filter-btn" data-category="desk" data-en="Service Desk" data-mr="सेवा केंद्र">Service Desk</button>
+          <button type="button" class="filter-btn" data-category="docs" data-en="Docs &amp; Travel" data-mr="कागदपत्रे व प्रवास">Docs &amp; Travel</button>
+        </div>
+
+        <div class="card inspector-box" id="galleryPreviewBox">
+          <div class="grid-2 align-center">
+            <div class="media-frame">
+              <img
+                id="galleryPreviewImg"
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80"
+                alt="Organized Digital Assistance Desk"
+              />
+            </div>
+            <div>
+              <span class="badge-tag" id="galleryPreviewBadge">Service Desk</span>
+              <h2 id="galleryPreviewTitle">Organized Digital Assistance Desk</h2>
+              <p id="galleryPreviewDesc">
+                Structured support for citizen portals, online forms, and digital documentation.
+              </p>
+              <div class="card-footer-actions">
+                <a href="contact.html" class="btn btn-primary btn-sm" id="galleryPreviewContactLink" data-en="Request Assistance" data-mr="मदतीसाठी संपर्क">
+                  Request Assistance
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-2 catalog-grid" id="galleryGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooterSlot"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
